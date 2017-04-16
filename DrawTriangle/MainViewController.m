@@ -10,7 +10,9 @@
 
 static NSString *cellIndentify = @"cell";
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+{
+    NSArray *_sourceArray;
+}
 @end
 
 @implementation MainViewController
@@ -21,6 +23,7 @@ static NSString *cellIndentify = @"cell";
     
     self.title = @"比较不同的画图方式";
     
+    _sourceArray = @[@"使用CAShapeLayer画三角形",@"结合CGPathAddLineToPoint画三角",@"结合CGPathAddArcToPoint画三角"];
     UITableView *listTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     listTableView.dataSource = self;
     listTableView.delegate = self;
@@ -31,7 +34,7 @@ static NSString *cellIndentify = @"cell";
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return [_sourceArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -40,7 +43,7 @@ static NSString *cellIndentify = @"cell";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentify];
     }
-    cell.textLabel.text = @"方式一";
+    cell.textLabel.text = _sourceArray[indexPath.row];
     return cell;
 }
 #pragma mark - UITableViewDelegate
