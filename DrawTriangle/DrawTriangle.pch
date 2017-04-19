@@ -1,0 +1,19 @@
+//
+//  DrawTriangle.pch
+//  DrawTriangle
+//
+//  Created by Peng he on 2017/4/19.
+//  Copyright © 2017年 Peng he. All rights reserved.
+//
+
+#ifndef DrawTriangle_pch
+#define DrawTriangle_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//手机宽度
+#define screenWidth  [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#endif /* DrawTriangle_pch */

@@ -7,6 +7,9 @@
 //
 
 #import "MainViewController.h"
+#import "DrawRectOneViewController.h"
+#import "DrawRectTwoViewController.h"
+#import "DrawRectThreeViewController.h"
 
 static NSString *cellIndentify = @"cell";
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -47,5 +50,18 @@ static NSString *cellIndentify = @"cell";
     return cell;
 }
 #pragma mark - UITableViewDelegate
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.row == 0) {
+        DrawRectOneViewController *drawRectOneVC = [[DrawRectOneViewController alloc] init];
+        [self.navigationController pushViewController:drawRectOneVC animated:YES];
+    } else if (indexPath.row == 1) {
+        DrawRectTwoViewController *drawRectTwoVC = [[DrawRectTwoViewController alloc] init];
+        [self.navigationController pushViewController:drawRectTwoVC animated:YES];
+    } else if (indexPath.row == 2) {
+        DrawRectThreeViewController *drawRectThreeVC = [[DrawRectThreeViewController alloc] init];
+        [self.navigationController pushViewController:drawRectThreeVC animated:YES];
+    }
+}
 @end

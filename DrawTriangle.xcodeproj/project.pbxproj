@@ -15,6 +15,10 @@
 		472CC2BE1EA3C57100970815 /* DrawTriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2BD1EA3C57100970815 /* DrawTriangleTests.m */; };
 		472CC2C91EA3C57100970815 /* DrawTriangleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2C81EA3C57100970815 /* DrawTriangleUITests.m */; };
 		472CC2D81EA3C7B500970815 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2D71EA3C7B500970815 /* MainViewController.m */; };
+		472CC2DB1EA7890F00970815 /* DrawRectOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2DA1EA7890F00970815 /* DrawRectOneViewController.m */; };
+		472CC2DF1EA78BFB00970815 /* DrawRectTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2DE1EA78BFB00970815 /* DrawRectTwoViewController.m */; };
+		472CC2E31EA78D4300970815 /* DrawTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2E21EA78D4300970815 /* DrawTriangleView.m */; };
+		472CC2E61EA791BD00970815 /* DrawRectThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2E51EA791BD00970815 /* DrawRectThreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,15 @@
 		472CC2CA1EA3C57100970815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		472CC2D61EA3C7B500970815 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		472CC2D71EA3C7B500970815 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		472CC2D91EA7890F00970815 /* DrawRectOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectOneViewController.h; sourceTree = "<group>"; };
+		472CC2DA1EA7890F00970815 /* DrawRectOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectOneViewController.m; sourceTree = "<group>"; };
+		472CC2DC1EA78A3700970815 /* DrawTriangle.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawTriangle.pch; sourceTree = "<group>"; };
+		472CC2DD1EA78BFB00970815 /* DrawRectTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectTwoViewController.h; sourceTree = "<group>"; };
+		472CC2DE1EA78BFB00970815 /* DrawRectTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectTwoViewController.m; sourceTree = "<group>"; };
+		472CC2E11EA78D4300970815 /* DrawTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTriangleView.h; sourceTree = "<group>"; };
+		472CC2E21EA78D4300970815 /* DrawTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTriangleView.m; sourceTree = "<group>"; };
+		472CC2E41EA791BD00970815 /* DrawRectThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectThreeViewController.h; sourceTree = "<group>"; };
+		472CC2E51EA791BD00970815 /* DrawRectThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectThreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +114,17 @@
 		472CC2A21EA3C57100970815 /* DrawTriangle */ = {
 			isa = PBXGroup;
 			children = (
+				472CC2E01EA78D1500970815 /* DrawRectView */,
 				472CC2A61EA3C57100970815 /* AppDelegate.h */,
 				472CC2A71EA3C57100970815 /* AppDelegate.m */,
 				472CC2D61EA3C7B500970815 /* MainViewController.h */,
 				472CC2D71EA3C7B500970815 /* MainViewController.m */,
+				472CC2D91EA7890F00970815 /* DrawRectOneViewController.h */,
+				472CC2DA1EA7890F00970815 /* DrawRectOneViewController.m */,
+				472CC2DD1EA78BFB00970815 /* DrawRectTwoViewController.h */,
+				472CC2DE1EA78BFB00970815 /* DrawRectTwoViewController.m */,
+				472CC2E41EA791BD00970815 /* DrawRectThreeViewController.h */,
+				472CC2E51EA791BD00970815 /* DrawRectThreeViewController.m */,
 				472CC2AC1EA3C57100970815 /* Main.storyboard */,
 				472CC2AF1EA3C57100970815 /* Assets.xcassets */,
 				472CC2B11EA3C57100970815 /* LaunchScreen.storyboard */,
@@ -118,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				472CC2A41EA3C57100970815 /* main.m */,
+				472CC2DC1EA78A3700970815 /* DrawTriangle.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +159,15 @@
 				472CC2CA1EA3C57100970815 /* Info.plist */,
 			);
 			path = DrawTriangleUITests;
+			sourceTree = "<group>";
+		};
+		472CC2E01EA78D1500970815 /* DrawRectView */ = {
+			isa = PBXGroup;
+			children = (
+				472CC2E11EA78D4300970815 /* DrawTriangleView.h */,
+				472CC2E21EA78D4300970815 /* DrawTriangleView.m */,
+			);
+			path = DrawRectView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472CC2E31EA78D4300970815 /* DrawTriangleView.m in Sources */,
 				472CC2A81EA3C57100970815 /* AppDelegate.m in Sources */,
 				472CC2A51EA3C57100970815 /* main.m in Sources */,
+				472CC2E61EA791BD00970815 /* DrawRectThreeViewController.m in Sources */,
 				472CC2D81EA3C7B500970815 /* MainViewController.m in Sources */,
+				472CC2DF1EA78BFB00970815 /* DrawRectTwoViewController.m in Sources */,
+				472CC2DB1EA7890F00970815 /* DrawRectOneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DrawTriangle/DrawTriangle.pch";
 				INFOPLIST_FILE = DrawTriangle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -441,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DrawTriangle/DrawTriangle.pch";
 				INFOPLIST_FILE = DrawTriangle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
