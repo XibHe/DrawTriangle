@@ -7,8 +7,14 @@
 //
 
 #import "DrawRectThreeViewController.h"
+#import "PopView.h"
 
-@interface DrawRectThreeViewController ()
+@interface DrawRectThreeViewController ()<UIGestureRecognizerDelegate>
+{
+    UIButton *_switchStatusBtn;
+}
+@property (nonatomic, strong) UIView  *coverView;
+@property (nonatomic, strong) PopView *popView;
 @end
 
 @implementation DrawRectThreeViewController
@@ -17,54 +23,67 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self drawDrawTriangleView];
+   // [self drawDrawTriangleView];
+    
+    // 弹出popView的按钮
+    _switchStatusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_switchStatusBtn setTitle:@"点击" forState:UIControlStateNormal];
+    [_switchStatusBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_switchStatusBtn setFrame:CGRectMake(screenWidth / 4,screenHeight / 4,screenWidth / 2,40)];
+    [_switchStatusBtn addTarget:self action:@selector(switchStatusBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    _switchStatusBtn.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:_switchStatusBtn];
+}
+
+#pragma mark - 初始化pop视图
+- (UIView *)coverView
+{
+    if (!_coverView) {
+        _coverView = [[UIView alloc] initWithFrame:self.view.bounds];
+        _coverView.hidden = YES;
+        _coverView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.8];
+        [[UIApplication sharedApplication].keyWindow addSubview:_coverView];
+        
+        // 
+        _popView = [[PopView alloc] initWithFrame:CGRectMake(0, _switchStatusBtn.frame.origin.y + 40, screenWidth, screenWidth * 84 / 375 / 2)];
+        [_coverView addSubview:_popView];
+        __weak typeof(self) weakSelf = self;
+        _popView.closePopViewBlock = ^{
+            weakSelf.coverView.hidden = YES;
+        };
+        
+        // 点击coverView的灰色区域，隐藏pop视图
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapCover:)];
+        tapGesture.delegate = self;
+        [_coverView addGestureRecognizer:tapGesture];
+    }
+    return _coverView;
+}
+
+- (void)tapCover:(UITapGestureRecognizer *)recognizer
+{
+    if (_popView) {
+        _popView.closePopViewBlock();
+    }
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    CGPoint point = [gestureRecognizer locationInView:gestureRecognizer.view];
+    if (CGRectContainsPoint(_popView.frame, point)){
+        return NO;
+    }
+    return YES;
+}
+
+- (void)switchStatusBtnClick:(UIButton *)sender
+{
+    self.coverView.hidden = !self.coverView.hidden;
+    self.popView.hidden = self.coverView.hidden;
 }
 
 - (void)drawDrawTriangleView
 {
-//    CGContextRef c = UIGraphicsGetCurrentContext();
-//    
-//    CGContextSetRGBStrokeColor(c, 0.0, 0.0, 0.0, 1.0);	// black
-//    CGContextSetLineWidth(c, 2);
-//    
-//    CGMutablePathRef bubblePath = CGPathCreateMutable();
-//    
-//    // 这里的原点是point的尖尖
-//    CGPathMoveToPoint(bubblePath, NULL, 145, 0);
-//    
-//    // 注意这里的X轴是默认给的_pointer的宽度，这个pointer是个正三角形，但是我们要个等腰的，所有X轴加上_pointer/2，Y轴加上_pointer，OK
-//    CGPathAddLineToPoint(bubblePath, NULL, 145 + 6, 12);
-//    
-//    CGPathAddArcToPoint(bubblePath, NULL,
-//                        287, 62,
-//                        287, 12 + 5,
-//                        5);
-//    
-//    CGPathAddArcToPoint(bubblePath, NULL,
-//                        287, 74,
-//                        287 - 5, 74,
-//                        5);
-//    
-//    CGPathAddArcToPoint(bubblePath, NULL,
-//                        2, 74,
-//                        2, 74 - 5,
-//                        5);
-//    
-//    CGPathAddArcToPoint(bubblePath, NULL,
-//                        2, 12,
-//                        2 + 5, 12,
-//                        5);
-//    
-//    // 这里也要改掉，不然自动关闭的时候就不是等腰三角形了
-//    CGPathAddLineToPoint(bubblePath, NULL, 145 - 6, 12);
-//    
-//    
-//    CGPathCloseSubpath(bubblePath);
-//    
-//    CGContextSaveGState(c);
-//    CGContextAddPath(c, bubblePath);
-//    CGContextClip(c);
-    
     //创建CGContextRef
     UIGraphicsBeginImageContext(self.view.bounds.size);
     CGContextRef gc = UIGraphicsGetCurrentContext();
