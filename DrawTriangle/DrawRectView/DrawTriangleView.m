@@ -19,11 +19,11 @@
     
     CGMutablePathRef bubblePath = CGPathCreateMutable();
     
-    // 这里的原点是point的尖尖
+    // 这里的点是三角形的尖尖
     CGPathMoveToPoint(bubblePath, NULL, self.frame.origin.x / 2, self.frame.origin.y);
-    // 注意这里的X轴是默认给的_pointer的宽度，这个pointer是个正三角形，但是我们要个等腰的，所有X轴加上_pointer/2，Y轴加上_pointer，OK
+    // 其中的一条边的终点
     CGPathAddLineToPoint(bubblePath, NULL, 0, self.frame.size.height / 3);
-    // 这里也要改掉，不然自动关闭的时候就不是等腰三角形了
+    // 另一条边的终点
     CGPathAddLineToPoint(bubblePath, NULL, self.frame.size.width, self.frame.size.height / 3);
     
     CGPathCloseSubpath(bubblePath);
