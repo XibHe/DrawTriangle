@@ -16,7 +16,6 @@
     
     CGContextSetRGBStrokeColor(c, 0.0, 0.0, 0.0, 1.0);	// black
     CGContextSetLineWidth(c, 1);
-    
     CGMutablePathRef bubblePath = CGPathCreateMutable();
     
     // 这里的点是三角形的尖尖
@@ -34,19 +33,5 @@
     CGContextSetFillColorWithColor(c, [[UIColor blueColor] CGColor]);
     CGContextFillRect(c, self.bounds);
     CGPathRelease(bubblePath);
-    
-    
-    // CGRectMake(screenWidth / 4, screenHeight / 4, screenWidth / 4, screenHeight / 4)
-//    
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    
-//    CGContextMoveToPoint(context, self.frame.origin.x / 2, 0);
-//    CGContextAddLineToPoint(context, 0, self.frame.size.height / 2 - 20);
-//    CGContextAddLineToPoint(context, self.frame.size.width, self.frame.size.height / 2 - 20);
-//    
-//    CGContextClosePath(context);
-//    [[UIColor blackColor] setStroke];
-//    [[UIColor redColor] setFill];
-//    CGContextDrawPath(context, kCGPathFillStroke);
 }
 @end

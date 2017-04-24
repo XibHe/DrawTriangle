@@ -15,11 +15,14 @@
 		472CC2BE1EA3C57100970815 /* DrawTriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2BD1EA3C57100970815 /* DrawTriangleTests.m */; };
 		472CC2C91EA3C57100970815 /* DrawTriangleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2C81EA3C57100970815 /* DrawTriangleUITests.m */; };
 		472CC2D81EA3C7B500970815 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2D71EA3C7B500970815 /* MainViewController.m */; };
-		472CC2DB1EA7890F00970815 /* DrawRectOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2DA1EA7890F00970815 /* DrawRectOneViewController.m */; };
-		472CC2DF1EA78BFB00970815 /* DrawRectTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2DE1EA78BFB00970815 /* DrawRectTwoViewController.m */; };
 		472CC2E31EA78D4300970815 /* DrawTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2E21EA78D4300970815 /* DrawTriangleView.m */; };
-		472CC2E61EA791BD00970815 /* DrawRectThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2E51EA791BD00970815 /* DrawRectThreeViewController.m */; };
 		472CC2EA1EA9FEA300970815 /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2E91EA9FEA300970815 /* PopView.m */; };
+		472CC2F01EAE0F5900970815 /* DrawPolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2EF1EAE0F5900970815 /* DrawPolygonView.m */; };
+		472CC2FF1EAE229E00970815 /* DrawRectFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2F61EAE229E00970815 /* DrawRectFiveViewController.m */; };
+		472CC3001EAE229E00970815 /* DrawRectFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2F81EAE229E00970815 /* DrawRectFourViewController.m */; };
+		472CC3011EAE229E00970815 /* DrawRectOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FA1EAE229E00970815 /* DrawRectOneViewController.m */; };
+		472CC3021EAE229E00970815 /* DrawRectThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FC1EAE229E00970815 /* DrawRectThreeViewController.m */; };
+		472CC3031EAE229E00970815 /* DrawRectTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,17 +59,23 @@
 		472CC2CA1EA3C57100970815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		472CC2D61EA3C7B500970815 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		472CC2D71EA3C7B500970815 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		472CC2D91EA7890F00970815 /* DrawRectOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectOneViewController.h; sourceTree = "<group>"; };
-		472CC2DA1EA7890F00970815 /* DrawRectOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectOneViewController.m; sourceTree = "<group>"; };
 		472CC2DC1EA78A3700970815 /* DrawTriangle.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawTriangle.pch; sourceTree = "<group>"; };
-		472CC2DD1EA78BFB00970815 /* DrawRectTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectTwoViewController.h; sourceTree = "<group>"; };
-		472CC2DE1EA78BFB00970815 /* DrawRectTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectTwoViewController.m; sourceTree = "<group>"; };
 		472CC2E11EA78D4300970815 /* DrawTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTriangleView.h; sourceTree = "<group>"; };
 		472CC2E21EA78D4300970815 /* DrawTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTriangleView.m; sourceTree = "<group>"; };
-		472CC2E41EA791BD00970815 /* DrawRectThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectThreeViewController.h; sourceTree = "<group>"; };
-		472CC2E51EA791BD00970815 /* DrawRectThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectThreeViewController.m; sourceTree = "<group>"; };
 		472CC2E81EA9FEA300970815 /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
 		472CC2E91EA9FEA300970815 /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		472CC2EE1EAE0F5900970815 /* DrawPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPolygonView.h; sourceTree = "<group>"; };
+		472CC2EF1EAE0F5900970815 /* DrawPolygonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPolygonView.m; sourceTree = "<group>"; };
+		472CC2F51EAE229E00970815 /* DrawRectFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectFiveViewController.h; sourceTree = "<group>"; };
+		472CC2F61EAE229E00970815 /* DrawRectFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectFiveViewController.m; sourceTree = "<group>"; };
+		472CC2F71EAE229E00970815 /* DrawRectFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectFourViewController.h; sourceTree = "<group>"; };
+		472CC2F81EAE229E00970815 /* DrawRectFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectFourViewController.m; sourceTree = "<group>"; };
+		472CC2F91EAE229E00970815 /* DrawRectOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectOneViewController.h; sourceTree = "<group>"; };
+		472CC2FA1EAE229E00970815 /* DrawRectOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectOneViewController.m; sourceTree = "<group>"; };
+		472CC2FB1EAE229E00970815 /* DrawRectThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectThreeViewController.h; sourceTree = "<group>"; };
+		472CC2FC1EAE229E00970815 /* DrawRectThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectThreeViewController.m; sourceTree = "<group>"; };
+		472CC2FD1EAE229E00970815 /* DrawRectTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectTwoViewController.h; sourceTree = "<group>"; };
+		472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectTwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,18 +126,13 @@
 		472CC2A21EA3C57100970815 /* DrawTriangle */ = {
 			isa = PBXGroup;
 			children = (
+				472CC2F41EAE229E00970815 /* DrawRectVC */,
 				472CC2E71EA9FE7F00970815 /* PopView */,
 				472CC2E01EA78D1500970815 /* DrawRectView */,
 				472CC2A61EA3C57100970815 /* AppDelegate.h */,
 				472CC2A71EA3C57100970815 /* AppDelegate.m */,
 				472CC2D61EA3C7B500970815 /* MainViewController.h */,
 				472CC2D71EA3C7B500970815 /* MainViewController.m */,
-				472CC2D91EA7890F00970815 /* DrawRectOneViewController.h */,
-				472CC2DA1EA7890F00970815 /* DrawRectOneViewController.m */,
-				472CC2DD1EA78BFB00970815 /* DrawRectTwoViewController.h */,
-				472CC2DE1EA78BFB00970815 /* DrawRectTwoViewController.m */,
-				472CC2E41EA791BD00970815 /* DrawRectThreeViewController.h */,
-				472CC2E51EA791BD00970815 /* DrawRectThreeViewController.m */,
 				472CC2AC1EA3C57100970815 /* Main.storyboard */,
 				472CC2AF1EA3C57100970815 /* Assets.xcassets */,
 				472CC2B11EA3C57100970815 /* LaunchScreen.storyboard */,
@@ -170,6 +174,8 @@
 			children = (
 				472CC2E11EA78D4300970815 /* DrawTriangleView.h */,
 				472CC2E21EA78D4300970815 /* DrawTriangleView.m */,
+				472CC2EE1EAE0F5900970815 /* DrawPolygonView.h */,
+				472CC2EF1EAE0F5900970815 /* DrawPolygonView.m */,
 			);
 			path = DrawRectView;
 			sourceTree = "<group>";
@@ -181,6 +187,23 @@
 				472CC2E91EA9FEA300970815 /* PopView.m */,
 			);
 			path = PopView;
+			sourceTree = "<group>";
+		};
+		472CC2F41EAE229E00970815 /* DrawRectVC */ = {
+			isa = PBXGroup;
+			children = (
+				472CC2F51EAE229E00970815 /* DrawRectFiveViewController.h */,
+				472CC2F61EAE229E00970815 /* DrawRectFiveViewController.m */,
+				472CC2F71EAE229E00970815 /* DrawRectFourViewController.h */,
+				472CC2F81EAE229E00970815 /* DrawRectFourViewController.m */,
+				472CC2F91EAE229E00970815 /* DrawRectOneViewController.h */,
+				472CC2FA1EAE229E00970815 /* DrawRectOneViewController.m */,
+				472CC2FB1EAE229E00970815 /* DrawRectThreeViewController.h */,
+				472CC2FC1EAE229E00970815 /* DrawRectThreeViewController.m */,
+				472CC2FD1EAE229E00970815 /* DrawRectTwoViewController.h */,
+				472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */,
+			);
+			path = DrawRectVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,13 +343,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				472CC2E31EA78D4300970815 /* DrawTriangleView.m in Sources */,
+				472CC3031EAE229E00970815 /* DrawRectTwoViewController.m in Sources */,
+				472CC2FF1EAE229E00970815 /* DrawRectFiveViewController.m in Sources */,
 				472CC2A81EA3C57100970815 /* AppDelegate.m in Sources */,
+				472CC2F01EAE0F5900970815 /* DrawPolygonView.m in Sources */,
 				472CC2A51EA3C57100970815 /* main.m in Sources */,
-				472CC2E61EA791BD00970815 /* DrawRectThreeViewController.m in Sources */,
 				472CC2D81EA3C7B500970815 /* MainViewController.m in Sources */,
-				472CC2DF1EA78BFB00970815 /* DrawRectTwoViewController.m in Sources */,
+				472CC3001EAE229E00970815 /* DrawRectFourViewController.m in Sources */,
+				472CC3021EAE229E00970815 /* DrawRectThreeViewController.m in Sources */,
+				472CC3011EAE229E00970815 /* DrawRectOneViewController.m in Sources */,
 				472CC2EA1EA9FEA300970815 /* PopView.m in Sources */,
-				472CC2DB1EA7890F00970815 /* DrawRectOneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

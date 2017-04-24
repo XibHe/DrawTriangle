@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
     _triangleView = [[UIView alloc] initWithFrame:CGRectMake(screenWidth / 4, 200, screenWidth / 2, screenHeight / 2)];
     _triangleView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_triangleView];
@@ -34,13 +35,14 @@
     CGFloat rightSpace = 10.;
     CGFloat topSpace = 15.;
 
+    // 起点
     CGPoint point1 = CGPointMake(0, 0);
+    
+    // 绘制线条
     CGPoint point2 = CGPointMake(viewWidth-rightSpace, 0);
-
     CGPoint point3 = CGPointMake(viewWidth-rightSpace, topSpace);
     CGPoint point4 = CGPointMake(viewWidth, topSpace);
     CGPoint point5 = CGPointMake(viewWidth-rightSpace, topSpace+10.);
-
     CGPoint point6 = CGPointMake(viewWidth-rightSpace, viewHeight);
     CGPoint point7 = CGPointMake(0, viewHeight);
 

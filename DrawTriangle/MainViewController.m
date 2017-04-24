@@ -10,6 +10,8 @@
 #import "DrawRectOneViewController.h"
 #import "DrawRectTwoViewController.h"
 #import "DrawRectThreeViewController.h"
+#import "DrawRectFourViewController.h"
+#import "DrawRectFiveViewController.h"
 
 static NSString *cellIndentify = @"cell";
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -23,10 +25,9 @@ static NSString *cellIndentify = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
     self.title = @"比较不同的画图方式";
     
-    _sourceArray = @[@"使用CAShapeLayer画三角形",@"结合CGPathAddLineToPoint画三角",@"结合CGPathAddArcToPoint画三角"];
+    _sourceArray = @[@"使用UIBezierPath绘制多边形",@"UIBezierPath+CAShapeLayer绘制多边形",@"结合CGPathAddLineToPoint画三角",@"结合CGPathAddArcToPoint画三角",@"CGPathRef上绘制渐变颜色"];
     UITableView *listTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     listTableView.dataSource = self;
     listTableView.delegate = self;
@@ -49,19 +50,27 @@ static NSString *cellIndentify = @"cell";
     cell.textLabel.text = _sourceArray[indexPath.row];
     return cell;
 }
+
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     if (indexPath.row == 0) {
+        DrawRectFourViewController *drawRectFourVC = [[DrawRectFourViewController alloc] init];
+        [self.navigationController pushViewController:drawRectFourVC animated:YES];
+    }else if (indexPath.row == 1) {
         DrawRectOneViewController *drawRectOneVC = [[DrawRectOneViewController alloc] init];
         [self.navigationController pushViewController:drawRectOneVC animated:YES];
-    } else if (indexPath.row == 1) {
+    } else if (indexPath.row == 2) {
         DrawRectTwoViewController *drawRectTwoVC = [[DrawRectTwoViewController alloc] init];
         [self.navigationController pushViewController:drawRectTwoVC animated:YES];
-    } else if (indexPath.row == 2) {
+    } else if (indexPath.row == 3) {
         DrawRectThreeViewController *drawRectThreeVC = [[DrawRectThreeViewController alloc] init];
         [self.navigationController pushViewController:drawRectThreeVC animated:YES];
+    } else if (indexPath.row == 4) {
+        DrawRectFiveViewController *drawRectFiveVC = [[DrawRectFiveViewController alloc] init];
+        [self.navigationController pushViewController:drawRectFiveVC animated:YES];
     }
 }
 @end
