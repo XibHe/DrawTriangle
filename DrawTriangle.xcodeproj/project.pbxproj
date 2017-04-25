@@ -23,6 +23,7 @@
 		472CC3011EAE229E00970815 /* DrawRectOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FA1EAE229E00970815 /* DrawRectOneViewController.m */; };
 		472CC3021EAE229E00970815 /* DrawRectThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FC1EAE229E00970815 /* DrawRectThreeViewController.m */; };
 		472CC3031EAE229E00970815 /* DrawRectTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */; };
+		472CC3061EAF76C200970815 /* ArcToPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC3051EAF76C200970815 /* ArcToPointViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		472CC2FC1EAE229E00970815 /* DrawRectThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectThreeViewController.m; sourceTree = "<group>"; };
 		472CC2FD1EAE229E00970815 /* DrawRectTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectTwoViewController.h; sourceTree = "<group>"; };
 		472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectTwoViewController.m; sourceTree = "<group>"; };
+		472CC3041EAF76C200970815 /* ArcToPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcToPointViewController.h; sourceTree = "<group>"; };
+		472CC3051EAF76C200970815 /* ArcToPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcToPointViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 				472CC2FC1EAE229E00970815 /* DrawRectThreeViewController.m */,
 				472CC2FD1EAE229E00970815 /* DrawRectTwoViewController.h */,
 				472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */,
+				472CC3041EAF76C200970815 /* ArcToPointViewController.h */,
+				472CC3051EAF76C200970815 /* ArcToPointViewController.m */,
 			);
 			path = DrawRectVC;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				472CC2F01EAE0F5900970815 /* DrawPolygonView.m in Sources */,
 				472CC2A51EA3C57100970815 /* main.m in Sources */,
 				472CC2D81EA3C7B500970815 /* MainViewController.m in Sources */,
+				472CC3061EAF76C200970815 /* ArcToPointViewController.m in Sources */,
 				472CC3001EAE229E00970815 /* DrawRectFourViewController.m in Sources */,
 				472CC3021EAE229E00970815 /* DrawRectThreeViewController.m in Sources */,
 				472CC3011EAE229E00970815 /* DrawRectOneViewController.m in Sources */,

@@ -21,8 +21,6 @@
 {
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];
-        
-        //[self setup];
     }
     return self;
 }
@@ -57,14 +55,6 @@
     //CGContextSetStrokeColorWithColor(c, [[UIColor clearColor] CGColor]);
     CGContextFillRect(c, self.bounds);
     CGPathRelease(bubblePath);
-    
-//    _maskLayer = [CAShapeLayer layer];
-//    _maskLayer.fillColor = [UIColor blackColor].CGColor;
-//    _maskLayer.strokeColor = [UIColor clearColor].CGColor;
-//    _maskLayer.frame = self.bounds;
-//    _maskLayer.contentsCenter = CGRectMake(0.5, 0.5, 0.1, 0.1);
-//    _maskLayer.path = bubblePath;
-//    [self.layer addSublayer:_maskLayer];
 }
 
 @end

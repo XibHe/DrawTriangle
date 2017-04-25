@@ -12,6 +12,7 @@
 #import "DrawRectThreeViewController.h"
 #import "DrawRectFourViewController.h"
 #import "DrawRectFiveViewController.h"
+#import "ArcToPointViewController.h"
 
 static NSString *cellIndentify = @"cell";
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -27,7 +28,7 @@ static NSString *cellIndentify = @"cell";
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"比较不同的画图方式";
     
-    _sourceArray = @[@"使用UIBezierPath绘制多边形",@"UIBezierPath+CAShapeLayer绘制多边形",@"结合CGPathAddLineToPoint画三角",@"结合CGPathAddArcToPoint画三角",@"CGPathRef上绘制渐变颜色"];
+    _sourceArray = @[@"使用UIBezierPath绘制多边形",@"UIBezierPath+CAShapeLayer绘制多边形",@"结合CGPathAddLineToPoint画三角",@"PopView",@"CGPathRef上绘制渐变颜色",@"结合CGPathAddArcToPoint绘制圆角矩形"];
     UITableView *listTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     listTableView.dataSource = self;
     listTableView.delegate = self;
@@ -71,6 +72,9 @@ static NSString *cellIndentify = @"cell";
     } else if (indexPath.row == 4) {
         DrawRectFiveViewController *drawRectFiveVC = [[DrawRectFiveViewController alloc] init];
         [self.navigationController pushViewController:drawRectFiveVC animated:YES];
+    } else if (indexPath.row == 5) {
+        ArcToPointViewController *arcToPointVC = [[ArcToPointViewController alloc] init];
+        [self.navigationController pushViewController:arcToPointVC animated:YES];
     }
 }
 @end
