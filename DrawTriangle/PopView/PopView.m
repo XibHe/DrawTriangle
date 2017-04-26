@@ -57,4 +57,54 @@
     CGPathRelease(bubblePath);
 }
 
+#pragma mark - 使用CGPathAddArcToPoint绘制带有箭头的弹窗菜单
+//- (void)drawRect:(CGRect)rect
+//{
+//    CGContextRef c = UIGraphicsGetCurrentContext();
+//    
+//    CGContextSetRGBStrokeColor(c, 0.0, 0.0, 0.0, 1.0);	// black
+//    CGContextSetLineWidth(c, 2);
+//    
+//    CGMutablePathRef bubblePath = CGPathCreateMutable();
+//    
+//    // 这里的原点是point的尖尖
+//    CGPathMoveToPoint(bubblePath, NULL, screenWidth / 2, 0);
+//    
+//    // 三角形的一边
+//    CGPathAddLineToPoint(bubblePath, NULL, screenWidth / 2 - 12, 12);
+//    
+//    // 右上
+//    CGPathAddArcToPoint(bubblePath, NULL,
+//                        screenWidth, 12,
+//                        screenWidth, 12 + 5,
+//                        5);
+//    // 右下
+//    CGPathAddArcToPoint(bubblePath, NULL,
+//                        screenWidth, 74,
+//                        0, 74,
+//                        5);
+//    
+//    // 左下
+//    CGPathAddArcToPoint(bubblePath, NULL,
+//                        0, 74,
+//                        0, 0,
+//                        5);
+//    // 左上
+//    CGPathAddArcToPoint(bubblePath, NULL,
+//                        0, 12,
+//                        7, 12,
+//                        5);
+//    // 三角形的另一边
+//    CGPathAddLineToPoint(bubblePath, NULL, screenWidth / 2 + 12,12);
+//    
+//    CGPathCloseSubpath(bubblePath);
+//    CGContextSaveGState(c);
+//    CGContextAddPath(c, bubblePath);
+//    CGContextClip(c);
+//    
+//    CGContextSetFillColorWithColor(c, [[UIColor redColor] CGColor]);
+//    CGContextFillRect(c, self.bounds);
+//    CGPathRelease(bubblePath);
+//}
+
 @end

@@ -23,7 +23,7 @@
     _triangleView = [[UIView alloc] initWithFrame:CGRectMake(screenWidth / 4, 200, screenWidth / 2, screenHeight / 2)];
     _triangleView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:_triangleView];
-    
+        
     _triangleView.layer.mask = [self createMaskLayerWithView];
 }
 

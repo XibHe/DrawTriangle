@@ -24,6 +24,9 @@
 		472CC3021EAE229E00970815 /* DrawRectThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FC1EAE229E00970815 /* DrawRectThreeViewController.m */; };
 		472CC3031EAE229E00970815 /* DrawRectTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */; };
 		472CC3061EAF76C200970815 /* ArcToPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC3051EAF76C200970815 /* ArcToPointViewController.m */; };
+		472CC3091EB0945E00970815 /* MaskImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC3081EB0945E00970815 /* MaskImageViewController.m */; };
+		472CC30C1EB09DCA00970815 /* ShapedImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC30B1EB09DCA00970815 /* ShapedImageViewController.m */; };
+		472CC3101EB09E3800970815 /* ShapedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC30F1EB09E3800970815 /* ShapedImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,12 @@
 		472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectTwoViewController.m; sourceTree = "<group>"; };
 		472CC3041EAF76C200970815 /* ArcToPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcToPointViewController.h; sourceTree = "<group>"; };
 		472CC3051EAF76C200970815 /* ArcToPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcToPointViewController.m; sourceTree = "<group>"; };
+		472CC3071EB0945E00970815 /* MaskImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskImageViewController.h; sourceTree = "<group>"; };
+		472CC3081EB0945E00970815 /* MaskImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskImageViewController.m; sourceTree = "<group>"; };
+		472CC30A1EB09DCA00970815 /* ShapedImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapedImageViewController.h; sourceTree = "<group>"; };
+		472CC30B1EB09DCA00970815 /* ShapedImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapedImageViewController.m; sourceTree = "<group>"; };
+		472CC30E1EB09E3800970815 /* ShapedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapedImageView.h; sourceTree = "<group>"; };
+		472CC30F1EB09E3800970815 /* ShapedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapedImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +138,7 @@
 		472CC2A21EA3C57100970815 /* DrawTriangle */ = {
 			isa = PBXGroup;
 			children = (
+				472CC30D1EB09E1F00970815 /* ShapedImage */,
 				472CC2F41EAE229E00970815 /* DrawRectVC */,
 				472CC2E71EA9FE7F00970815 /* PopView */,
 				472CC2E01EA78D1500970815 /* DrawRectView */,
@@ -207,8 +217,21 @@
 				472CC2FE1EAE229E00970815 /* DrawRectTwoViewController.m */,
 				472CC3041EAF76C200970815 /* ArcToPointViewController.h */,
 				472CC3051EAF76C200970815 /* ArcToPointViewController.m */,
+				472CC3071EB0945E00970815 /* MaskImageViewController.h */,
+				472CC3081EB0945E00970815 /* MaskImageViewController.m */,
+				472CC30A1EB09DCA00970815 /* ShapedImageViewController.h */,
+				472CC30B1EB09DCA00970815 /* ShapedImageViewController.m */,
 			);
 			path = DrawRectVC;
+			sourceTree = "<group>";
+		};
+		472CC30D1EB09E1F00970815 /* ShapedImage */ = {
+			isa = PBXGroup;
+			children = (
+				472CC30E1EB09E3800970815 /* ShapedImageView.h */,
+				472CC30F1EB09E3800970815 /* ShapedImageView.m */,
+			);
+			path = ShapedImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,12 +371,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				472CC2E31EA78D4300970815 /* DrawTriangleView.m in Sources */,
+				472CC30C1EB09DCA00970815 /* ShapedImageViewController.m in Sources */,
 				472CC3031EAE229E00970815 /* DrawRectTwoViewController.m in Sources */,
 				472CC2FF1EAE229E00970815 /* DrawRectFiveViewController.m in Sources */,
 				472CC2A81EA3C57100970815 /* AppDelegate.m in Sources */,
+				472CC3091EB0945E00970815 /* MaskImageViewController.m in Sources */,
 				472CC2F01EAE0F5900970815 /* DrawPolygonView.m in Sources */,
 				472CC2A51EA3C57100970815 /* main.m in Sources */,
 				472CC2D81EA3C7B500970815 /* MainViewController.m in Sources */,
+				472CC3101EB09E3800970815 /* ShapedImageView.m in Sources */,
 				472CC3061EAF76C200970815 /* ArcToPointViewController.m in Sources */,
 				472CC3001EAE229E00970815 /* DrawRectFourViewController.m in Sources */,
 				472CC3021EAE229E00970815 /* DrawRectThreeViewController.m in Sources */,
