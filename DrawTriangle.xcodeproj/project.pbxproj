@@ -29,6 +29,8 @@
 		472CC3091EB0945E00970815 /* MaskImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC3081EB0945E00970815 /* MaskImageViewController.m */; };
 		472CC30C1EB09DCA00970815 /* ShapedImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC30B1EB09DCA00970815 /* ShapedImageViewController.m */; };
 		472CC3101EB09E3800970815 /* ShapedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 472CC30F1EB09E3800970815 /* ShapedImageView.m */; };
+		BD1628ED2385699E007A057D /* MCCouponTagLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1628EC2385699E007A057D /* MCCouponTagLabel.m */; };
+		BD1628F023859C04007A057D /* MCCouponTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1628EF23859C04007A057D /* MCCouponTagViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,10 @@
 		472CC30B1EB09DCA00970815 /* ShapedImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapedImageViewController.m; sourceTree = "<group>"; };
 		472CC30E1EB09E3800970815 /* ShapedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapedImageView.h; sourceTree = "<group>"; };
 		472CC30F1EB09E3800970815 /* ShapedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapedImageView.m; sourceTree = "<group>"; };
+		BD1628EB2385699E007A057D /* MCCouponTagLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCCouponTagLabel.h; sourceTree = "<group>"; };
+		BD1628EC2385699E007A057D /* MCCouponTagLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCCouponTagLabel.m; sourceTree = "<group>"; };
+		BD1628EE23859C04007A057D /* MCCouponTagViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCCouponTagViewController.h; sourceTree = "<group>"; };
+		BD1628EF23859C04007A057D /* MCCouponTagViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCCouponTagViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 				472CC2B11EA3C57100970815 /* LaunchScreen.storyboard */,
 				472CC2B41EA3C57100970815 /* Info.plist */,
 				472CC2A31EA3C57100970815 /* Supporting Files */,
+				BD1628EB2385699E007A057D /* MCCouponTagLabel.h */,
+				BD1628EC2385699E007A057D /* MCCouponTagLabel.m */,
 			);
 			path = DrawTriangle;
 			sourceTree = "<group>";
@@ -239,6 +247,8 @@
 				472CC30B1EB09DCA00970815 /* ShapedImageViewController.m */,
 				3B4D48CF1FD56B82004FBEF5 /* PayMentHUDViewController.h */,
 				3B4D48D01FD56B82004FBEF5 /* PayMentHUDViewController.m */,
+				BD1628EE23859C04007A057D /* MCCouponTagViewController.h */,
+				BD1628EF23859C04007A057D /* MCCouponTagViewController.m */,
 			);
 			path = DrawRectVC;
 			sourceTree = "<group>";
@@ -341,6 +351,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -404,7 +415,9 @@
 				472CC3001EAE229E00970815 /* DrawRectFourViewController.m in Sources */,
 				472CC3021EAE229E00970815 /* DrawRectThreeViewController.m in Sources */,
 				472CC3011EAE229E00970815 /* DrawRectOneViewController.m in Sources */,
+				BD1628F023859C04007A057D /* MCCouponTagViewController.m in Sources */,
 				472CC2EA1EA9FEA300970815 /* PopView.m in Sources */,
+				BD1628ED2385699E007A057D /* MCCouponTagLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

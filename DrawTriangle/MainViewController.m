@@ -16,6 +16,7 @@
 #import "MaskImageViewController.h"
 #import "ShapedImageViewController.h"
 #import "PayMentHUDViewController.h"
+#import "MCCouponTagViewController.h"
 
 static NSString *cellIndentify = @"cell";
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -31,7 +32,7 @@ static NSString *cellIndentify = @"cell";
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"比较不同的画图方式";
     
-    _sourceArray = @[@"使用UIBezierPath绘制多边形",@"UIBezierPath+CAShapeLayer绘制多边形",@"CAShapeLayer设置Image",@"UIBezierPath绘制圆角Image",@"结合CGPathAddLineToPoint画三角",@"绘制带有箭头的矩形框",@"CGPathRef上绘制渐变颜色",@"结合CGPathAddArcToPoint绘制圆角矩形",@"结合CABasicAnimation做动画"];
+    _sourceArray = @[@"使用UIBezierPath绘制多边形",@"UIBezierPath+CAShapeLayer绘制多边形",@"CAShapeLayer设置Image",@"UIBezierPath绘制圆角Image",@"结合CGPathAddLineToPoint画三角",@"绘制带有箭头的矩形框",@"CGPathRef上绘制渐变颜色",@"结合CGPathAddArcToPoint绘制圆角矩形",@"结合CABasicAnimation做动画",@"贝塞尔曲线"];
     UITableView *listTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     listTableView.dataSource = self;
     listTableView.delegate = self;
@@ -87,6 +88,9 @@ static NSString *cellIndentify = @"cell";
     } else if (indexPath.row == 8) {
         PayMentHUDViewController *payMentHUDVC = [[PayMentHUDViewController alloc] init];
         [self.navigationController pushViewController:payMentHUDVC animated:YES];
+    } else if (indexPath.row == 9) {
+        MCCouponTagViewController *couponTagVC = [[MCCouponTagViewController alloc] init];
+        [self.navigationController pushViewController:couponTagVC animated:YES];
     }
 }
 @end
