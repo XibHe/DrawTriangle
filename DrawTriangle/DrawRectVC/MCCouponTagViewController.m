@@ -19,12 +19,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    MCCouponTagLabel *couponTagLabel = [[MCCouponTagLabel alloc] initWithFrame:CGRectMake(200, 300, 100, 60)];
-    couponTagLabel.backgroundColor = [UIColor redColor];
+    MCCouponTagLabel *couponTagLabel = [[MCCouponTagLabel alloc] initWithFrame:CGRectMake(self.view.center.x - 100/2, self.view.center.y - 60/2, 100, 60) text:@"测试标签" textColor:@"" backgroundColor:@"" cornerRadius:2];
     [self.view addSubview:couponTagLabel];
 }
-
-
 
 @end
