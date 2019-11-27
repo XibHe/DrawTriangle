@@ -19,9 +19,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    CGRect frame = CGRectMake((CGRectGetWidth(self.view.bounds) - 100) / 2, (CGRectGetHeight(self.view.bounds) - 150) / 2, 100, 150);
+    CGRect frame = CGRectMake(10, (CGRectGetHeight(self.view.bounds) - 150) / 2, 320, 34);
     ShapedImageView *shapedImageView = [[ShapedImageView alloc] initWithFrame:frame];
-    shapedImageView.image = [UIImage imageNamed:@"shapedImage"];
     [self.view addSubview:shapedImageView];
 }
 

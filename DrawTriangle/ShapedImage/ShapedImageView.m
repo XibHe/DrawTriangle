@@ -21,12 +21,34 @@
 {
     if (self = [super initWithFrame:frame]) {
         [self setup];
+//        [self setupSubViews];
     }
     return self;
 }
 
 - (void)setup
 {
+    _maskLayer = [CAShapeLayer layer];
+    _maskLayer.fillColor = [UIColor blackColor].CGColor;
+    _maskLayer.strokeColor = [UIColor clearColor].CGColor;
+    _maskLayer.frame = self.bounds;
+    _maskLayer.contentsCenter = CGRectMake(0.1, 0.1, 0.1, 0.1);
+    _maskLayer.contentsScale = [UIScreen mainScreen].scale;                 //非常关键设置自动拉伸的效果且不变形
+    _maskLayer.contents = (id)[UIImage imageNamed:@"pop"].CGImage;
+    
+    _contentLayer = [CALayer layer];
+    _contentLayer.mask = _maskLayer;
+    _contentLayer.frame = self.bounds;
+    _contentLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"popBack"].CGImage);
+    [self.layer addSublayer:_contentLayer];
+    
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(4, 4, 300, 30)];
+    title.font = [UIFont systemFontOfSize:12];
+    title.text = @"消息中心可联系销售或客服，可查看物流促销等信息";
+    [self addSubview:title];
+}
+
+- (void)setupSubViews {
     _maskLayer = [CAShapeLayer layer];
     _maskLayer.fillColor = [UIColor blackColor].CGColor;
     _maskLayer.strokeColor = [UIColor clearColor].CGColor;
@@ -38,11 +60,8 @@
     _contentLayer = [CALayer layer];
     _contentLayer.mask = _maskLayer;
     _contentLayer.frame = self.bounds;
+    _contentLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"shapedImage"].CGImage);
     [self.layer addSublayer:_contentLayer];
 }
 
-- (void)setImage:(UIImage *)image
-{
-    _contentLayer.contents = (id)image.CGImage;
-}
 @end
